@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* Link das Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+/* Declaração de variaveis */
+:root {
+
+    /* Fontes do site */
+    --fontePrincipal: 'Dancing Script', cursive;
+    --fonteTitulo: 'Kaushan Script', cursive;
+}
+
+/* Configurações globais */
+
+* {
+    font-family: var(--fontePrincipal);
+}
+
+body {
+    margin: auto;
+    border: 2px solid black;
+    max-width: 600px;
+    
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 5em;
+}
+header p {
+    font-size: 1.5em;
+}
+
+/* Section com imagens de fundo */
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.534);
+    margin: 50px 0 50px 0px;
+    height: 600px;
+    position: relative;
+    
+
+}
+
+section#img01 p{
+    color: white;
+    height: 300px;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.301);
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    padding: 20px 20px 20px 20px;
+    line-height: 45px;
+
+    position: absolute;
+    top: 17%;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.534);
+    margin: 50px 0 50px 0px;
+    height: 600px;
+    position: relative;
+
+}
+
+section#img02 p{
+    color: white;
+    height: 300px;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.301);
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    padding: 20px 20px 20px 20px;
+    line-height: 45px;
+
+    position: absolute;
+    top: 17%;
+}
+
+/* section sem imagem de fundo */
+
+section.normal {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+    line-height: 40px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+a:hover {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
